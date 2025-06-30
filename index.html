@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Dr. Adam Watchman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     * {
@@ -349,6 +350,7 @@
       font-size: 14px;
     }
 
+    /* ✅ Media Queries for Responsiveness */
     @media (max-width: 1024px) {
       .card, .let-me-know {
         flex-direction: column;
@@ -373,6 +375,24 @@
       }
     }
 
+    @media (max-width: 768px) {
+      .hero img {
+        max-width: 100%;
+      }
+
+      .main-img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .small-img {
+        width: 90px;
+        height: 90px;
+        bottom: -20px;
+        right: -20px;
+      }
+    }
+
     @media (max-width: 480px) {
       .hero-text h1,
       .about-text h2 {
@@ -383,11 +403,22 @@
       .about-text p {
         font-size: 13px;
       }
+
+      nav ul {
+        gap: 10px;
+      }
+
+      button {
+        width: 100%;
+      }
+
+      .let-me-know {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 <body>
-
   <header>
     <div class="logo">
       <img src="https://cdn-icons-png.flaticon.com/512/3105/3105807.png" alt="Doctor Logo">
